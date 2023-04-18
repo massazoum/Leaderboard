@@ -1,14 +1,8 @@
 import _ from 'lodash';
 import './style.css';
+import {score ,scoreLists} from './ZoumModules/Add'
 
-function component() {
-  const element = document.createElement('div');
+const bntSubmit =document.querySelector('.bnt-Submit');
+bntSubmit.addEventListener('click',scoreLists.gerer);
 
-  // Lodash, currently included via a script, is required for this line to work:::
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+scoreLists.showScore();
