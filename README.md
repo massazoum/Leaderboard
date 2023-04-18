@@ -74,7 +74,7 @@ In order to run this project, you need to have a web browser installed on your c
 Clone this repository to your desired folder by running the following command:
 
 ```Setup
-  - git clone  https://github.com/massazoum/To-Do-list-project.git
+  - git clone  https://github.com/massazoum/Leaderboard.git
   ```
  ### Install
 
@@ -105,7 +105,7 @@ To run tests, run the following command:
 ### Deployment
 
   The changes will be deployed to the website through our standard deployment process.
-- [ To-Do-list](https://massazoum.github.io/To-Do-list-project/dist)
+- [ To-Do-list](https://massazoum.github.io/Leaderboard/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
