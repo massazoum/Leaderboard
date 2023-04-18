@@ -105,7 +105,7 @@ To run tests, run the following command:
 ### Deployment
 
   The changes will be deployed to the website through our standard deployment process.
-- [ To-Do-list](https://massazoum.github.io/Leaderboard/dist)
+- [Leaderboard](https://massazoum.github.io/Leaderboard/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
