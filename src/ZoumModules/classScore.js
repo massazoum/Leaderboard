@@ -1,7 +1,8 @@
-class Score {
-  constructor(nom, win) {
-    this.nom = nom;
-    this.win = win;
-  }
-}
-export default Score;
+const takeInp = () => {
+  const jeu = {
+    user: document.querySelector('.InpText').value,
+    score: document.querySelector('.InpNumber').value,
+  };
+  return jeu;
+};
+export default takeInp;

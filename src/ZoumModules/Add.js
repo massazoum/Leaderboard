@@ -1,34 +1,18 @@
-import Score from './classScore.js';
+import takeInp from './classScore.js';
+import { idgame } from './PostZrequest.js';
 
-export default class scoreLists {
- static InpText =document.querySelector('.InpText');
-
- static InpNumber=document.querySelector('.InpNumber');
-
- static arrayscore =JSON.parse(localStorage.getItem('store')) || [];
-
- static gerer() {
-   scoreLists.add();
-   scoreLists.showScore();
- }
-
- static add() {
-   const InpText = document.querySelector('.InpText');
-   const InpNumber = document.querySelector('.InpNumber');
-   const newscore = new Score(InpText.value, InpNumber.value);
-   scoreLists.arrayscore.push(newscore);
-   localStorage.setItem('store', JSON.stringify(scoreLists.arrayscore));
- }
-
- static showScore() {
-   const ScoresList = document.querySelector('.ScoresListes');
-   ScoresList.innerHTML = '';
-   scoreLists.arrayscore.forEach((score) => {
-     const newdiv = document.createElement('div');
-     newdiv.className = 'ScoresListe';
-     newdiv.innerHTML = ` <div class="scorenom">${score.nom}</div><div class="scorepoint"> :</div> <div>${score.win}</div>
-      `;
-     ScoresList.appendChild(newdiv);
-   });
- }
-}
+const Postjeu = async () => {
+  try {
+    const jeu = takeInp();
+    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${idgame}/scores/`, {
+      method: 'POST',
+      body: JSON.stringify(jeu),
+      headers: {
+        'Content-Type': 'application/json;charset=UTF-8',
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+export default Postjeu;
