@@ -59,6 +59,8 @@ This is a JavaScript project that allows you to create a list of books and view 
 - I Used JavaScript to manipulate DOM elements.
 - I Used JavaScript events.
 - I used objects to store and access data.
+- I used arrow functions instead of the function keyword.
+- I used async and await JavaScript features to consume the API.
 
 # 💻 Getting Started <a name="getting-started"></a>
 
