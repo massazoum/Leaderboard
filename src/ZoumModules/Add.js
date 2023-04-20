@@ -1,4 +1,3 @@
-// import scoreLists from './Add.js';
 import takeInp from './classScore.js';
 import { idgame } from './PostZrequest.js';
 

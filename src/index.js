@@ -1,4 +1,3 @@
-// import _ from 'lodash';
 import './style.css';
 import { getjeu } from './ZoumModules/PostZrequest.js';
 import Postjeu from './ZoumModules/Add.js';
