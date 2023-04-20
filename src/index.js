@@ -1,8 +1,9 @@
 // import _ from 'lodash';
 import './style.css';
-import scoreLists from './ZoumModules/Add.js';
+import { getjeu } from './ZoumModules/PostZrequest.js';
+import Postjeu from './ZoumModules/Add.js';
+
+document.querySelector('.btn-refresh').addEventListener('click', getjeu);
 
 const bntSubmit = document.querySelector('.bnt-Submit');
-bntSubmit.addEventListener('click', scoreLists.gerer);
-
-scoreLists.showScore();
+bntSubmit.addEventListener('click', Postjeu);
