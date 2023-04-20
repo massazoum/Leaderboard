@@ -12,7 +12,6 @@ const Postjeu = async () => {
         'Content-Type': 'application/json;charset=UTF-8',
       },
     });
-    const data = await response.json();
   } catch (error) {
     console.log(error);
   }
