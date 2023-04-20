@@ -1,7 +1,7 @@
 # Leaderboard
 
 <a name="readme-top"></a>
- ![LOgin](https://github.com/massazoum/Leaderboard/blob/Leaderboard-UI/src/imges/ScreenshotRead1.png)
+ ![LOgin](https://github.com/massazoum/Leaderboard/blob/dev/src/imges/ScreenshotRead1.png)
 <div align="center">
   
   <br/>
