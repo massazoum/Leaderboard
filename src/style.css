@@ -19,8 +19,8 @@ main {
   margin-left: 10px;
   border: 5px solid black;
   display: flex;
-  width: 100vw;
-  min-height: 100vh;
+  width: 97vw;
+  min-height: 80vh;
   padding-bottom: 10px;
   box-shadow: 6px 10px 10px 2px black;
 }
@@ -151,4 +151,52 @@ input[type="number"] {
 .scorepoint {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+@media (max-width: 780px) {
+  main {
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    min-height: 80vh;
+    padding-bottom: 10px;
+    box-shadow: 6px 10px 10px 2px black;
+  }
+
+  .ScoresListes {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 90vw;
+    margin-right: 10vw;
+    min-height: 400px;
+    box-shadow: 6px 10px 11px 2px black;
+    border: 1px solid rgb(1, 2, 1);
+    background: hsl(0, 100%, 50%);
+    background: linear-gradient(77deg, hsl(0, 100%, 50%) 0%, #ffec00 40%, #00f8ff 80%);
+    background: -webkit-linear-gradient(77deg, hsl(0, 100%, 50%) 0%, #ffec00 40%, #00f8ff 80%);
+    background: -moz-linear-gradient(77deg, hsl(0, 100%, 50%) 0%, #ffec00 40%, #00f8ff 80%);
+  }
+
+  .scoreform {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 80vw;
+    margin-left: 10px;
+  }
+
+  .tabescore {
+    margin-top: 50px;
+    margin-left: 2vw;
+  }
+
+  .div-bnt-Submit {
+    display: flex;
+    justify-content: left;
+  }
 }
